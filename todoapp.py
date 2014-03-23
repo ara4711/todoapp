@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from models import db
 from api import api_bp
 import argparse
+import os
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
@@ -25,4 +26,5 @@ if __name__ == '__main__':
     if args.init:
         init()
     else:
-        app.run(host='0.0.0.0', port=3000)  # I like port 3000 :)
+        port = int(os.environ.get("PORT", 3000)) # I like port 3000 :)
+        app.run(host='0.0.0.0', port=port)  

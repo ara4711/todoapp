@@ -3,7 +3,7 @@ TodoApp
 
 A simple Todo Application made with Angular.js (client side) and Flask as Server.
 
-[Demo Server](http://143.225.204.60:3000/)
+[Demo Server](http://aqueous-retreat-5262.herokuapp.com/)
 
 ## Requirements
 - Sqlite
